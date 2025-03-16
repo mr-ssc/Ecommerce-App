@@ -1,0 +1,286 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.main-buy {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buy-hed {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buy-hed button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.buy-hed button:hover {
+    color: #007bff;
+}
+
+.buy-hed p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.buy-mycart {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.buy-mycart img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.buy-mycart h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.buy-mycart p {
+    font-size: 16px;
+    color: #666;
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-container button:hover {
+    background-color: #0056b3;
+}
+
+.quantity-container span {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.buy-delivory {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.buy-delivory i {
+    font-size: 20px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.buy-delivory p {
+    font-size: 16px;
+    color: #333;
+}
+
+.buy-delivory .fa-right-long {
+    margin-left: auto;
+}
+
+.buy-payment {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.buy-payment h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.buy-payment p {
+    font-size: 16px;
+    color: #666;
+}
+
+.buy-order {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.buy-order p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.buy-cackoout {
+    text-align: center;
+}
+
+.buy-cackoout button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.buy-cackoout button:hover {
+    background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-buy {
+        padding: 10px;
+    }
+
+    .buy-hed p {
+        font-size: 20px;
+    }
+
+    .buy-mycart h4 {
+        font-size: 18px;
+    }
+
+    .buy-mycart p {
+        font-size: 14px;
+    }
+
+    .buy-delivory p {
+        font-size: 14px;
+    }
+
+    .buy-payment h4 {
+        font-size: 16px;
+    }
+
+    .buy-payment p {
+        font-size: 14px;
+    }
+
+    .buy-order p {
+        font-size: 14px;
+    }
+
+    .buy-cackoout button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .buy-hed p {
+        font-size: 18px;
+    }
+
+    .buy-mycart h4 {
+        font-size: 16px;
+    }
+
+    .buy-mycart p {
+        font-size: 12px;
+    }
+
+    .buy-delivory p {
+        font-size: 12px;
+    }
+
+    .buy-payment h4 {
+        font-size: 14px;
+    }
+
+    .buy-payment p {
+        font-size: 12px;
+    }
+
+    .buy-order p {
+        font-size: 12px;
+    }
+
+    .buy-cackoout button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

@@ -1,0 +1,78 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 54px;
+    left: 0;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+
+  .navbar-link {
+    color: aliceblue;
+  }
+
+
+  .navbar-item {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-cart {
+    margin-left: auto;
+  }
+}
+
+/* Add margin-bottom when mobile menu is open */
+.navbar.active {
+  margin-bottom: 100px;
+  transition: margin-bottom 0.3s ease;
+}
+
+
+@media (max-width: 375px) {
+  .navbar-logo a {
+    font-size: 21px;
+  }
+
+  .navbar-toggle .bar {
+    width: 20px;
+    height: 2px;
+
+  }
+
+}
+
+
+@media (max-width: 320px) {
+  .navbar-logo a {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: 10px 10px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="MediaStyle.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <title>Easy2Solutions</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar">
+    <!-- Toggle Button -->
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <!-- Logo -->
+    <div class="navbar-logo">
+      <a href="#">Easy2Solutions</a>
+    </div>
+
+    <!-- Navbar Links -->
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+    </ul>
+
+    <!-- Cart Icon -->
+    <div class="navbar-cart">
+      <a href="Product.html"><i class="fa-solid fa-cart-plus"></i></a>
+    </div>
+  </nav>
+
+  <!-- Special Offers Section -->
+  <div class="special-offers">
+    <div class="search-container">
+      <h2>Special Offers</h2>
+      <input type="text" class="search-input" placeholder="Search..." />
+      <div class="search-icon">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide"><img src="Img/slide-1.png" alt="Slide 1"></div>
+      <div class="slide"><img src="Img/slide-2.png" alt="Slide 2"></div>
+      <div class="slide"><img src="Img/slide-3.png" alt="Slide 3"></div>
+      <div class="slide"><img src="Img/slide-4.png" alt="Slide 4"></div>
+    </div>
+    <div class="navigation-dots"></div>
+  </div>
+
+  <!-- Product Cards Section -->
+  <div class="product-container">
+    <div class="product-header">
+      <h2>Popular Products</h2>
+      <a href="#" class="view-all">View All</a>
+    </div>
+    <div class="product-grid">
+
+
+
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1500" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 1</h3>
+        <p class="product-price">$20.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1501" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 2</h3>
+        <p class="product-price">$25.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1502" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 3</h3>
+        <p class="product-price">$30.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1503" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 4</h3>
+        <p class="product-price">$35.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1504" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 5</h3>
+        <p class="product-price">$20.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1505" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 6</h3>
+        <p class="product-price">$25.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1506" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 7</h3>
+        <p class="product-price">$30.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1507" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 8</h3>
+        <p class="product-price">$35.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1508" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 9</h3>
+        <p class="product-price">$20.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1509" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 10</h3>
+        <p class="product-price">$25.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1602" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 11</h3>
+        <p class="product-price">$30.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+        </a>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <div class="image-container">
+          <img src="https://picsum.photos/1603" alt="Product Image">
+          <i class="fas fa-heart like-icon" onclick="toggleLike(this)"></i>
+        </div>
+        <h3 class="product-name">Product Name 12</h3>
+        <p class="product-price">$35.00</p>
+        <a href="Product.html">
+          <button class="cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+      </div>
+      </a>
+
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
