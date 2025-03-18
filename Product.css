@@ -116,6 +116,7 @@ body {
 
 .cart-info-hed h3 {
     margin: 0;
+    float: left;
     font-size: 1.5rem;
 }
 
@@ -172,11 +173,16 @@ body {
     }
 
     .cart-info-hed h3 {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
+        margin-left: -15px;
     }
 
     .cart-info-hed p {
-        font-size: 1rem;
+        font-size: .8rem;
+    }
+
+    .cart-info-about{
+        margin-left: -15px;
     }
 
     .buy-now-btn {

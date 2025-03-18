@@ -21,9 +21,9 @@
 
         <div class="buy-hed">
             <a href="Index.html">
-            <button class="buy-left-btn"><i class="fa-solid fa-arrow-left"></i></button>
-        </a>
-                <p>Order Details</p>
+                <button class="buy-left-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            </a>
+            <p>Order Details</p>
         </div>
 
         <div class="buy-mycart">
@@ -33,10 +33,10 @@
             <p>This is Product</p>
             <p>$8.97</p>
 
-            <div class="quantity-container">
-                <button class="decrement">-</button>
-                <span class="quantity">1</span>
-                <button class="increment">+</button>
+            <div class="counter">
+                <button id="decris">-</button>
+                <span id="count">0</span>
+                <button id="incris">+</button>
             </div>
         </div>
 
@@ -66,8 +66,23 @@
 
     </div>
 
+    <script>
+        let count = 0;
 
-  
+        document.getElementById('incris').addEventListener('click', function () {
+            count++;
+            document.getElementById('count').textContent = count;
+        });
+
+        document.getElementById('decris').addEventListener('click', function () {
+            if (count > 0) {
+                count--;
+                document.getElementById('count').textContent = count;
+            }
+        });
+    </script>
+
+
 
 
 </body>
